@@ -1,0 +1,104 @@
+html,body,ul,img,h2,h4 {
+    padding:0;
+    margin:0;
+}
+
+ul {
+    list-style: none;
+}
+
+input {
+    display: none;
+}
+
+body {
+    width:100%;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width:35%;
+    margin:50px auto;
+    padding:20px 0;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+img {
+    height:300px;
+    width:300px;
+    border-radius:150px;
+}
+
+.username {
+    text-align: center;
+    font-size :20pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    margin-bottom: 10px;
+}
+
+.slogan {
+    text-align: center;
+    font-family: cursive;
+    font-style: italic;
+}  
+
+.basic-info {
+    margin-top: 30px;
+    margin-left:30px;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    text-align: left;
+}
+
+.basic-info li {
+    margin-bottom: 10px;
+}
+
+.basic-info .name {
+    font-weight: bold;
+    font-size: 14pt;
+    color:blue;
+}
+
+.name:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.hidden li {
+    margin-bottom:10px;
+    font-weight: bold;
+}
+
+
+input[type="checkbox"]:checked ~ .hidden {
+    display: block;
+    margin-left:20px;
+    margin-top: 10px;
+    list-style: disc;
+}
+
+input[type="checkbox"]:checked ~ .name {
+    color:black;
+}
+
+input[type="checkbox"] ~ i {
+    transition: transform 0.5s;
+}
+
+input[type="checkbox"]:checked ~ i {
+    transform:rotate(45deg);
+}
